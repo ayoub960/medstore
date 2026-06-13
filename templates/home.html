@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- HERO -->
+<div class="hero mb-5">
+
+    <h1>Welcome to MedStore 💊</h1>
+
+    <p>Trusted Pharmacy with Cash on Delivery Across Pakistan</p>
+
+</div>
+
+<!-- FEATURES -->
+<div class="row text-center mb-5">
+
+    <div class="col-md-4">
+        <h5>🚚 Fast Delivery</h5>
+        <p>All over Pakistan</p>
+    </div>
+
+    <div class="col-md-4">
+        <h5>💵 Cash on Delivery</h5>
+        <p>Pay when you receive</p>
+    </div>
+
+    <div class="col-md-4">
+        <h5>✔ Genuine Medicines</h5>
+        <p>100% Original Products</p>
+    </div>
+
+</div>
+
+<h3 class="text-center mb-4">Our Medicines</h3>
+
+<div class="row">
+
+    {% for medicine in medicines %}
+
+    <div class="col-md-4 mb-4">
+
+        <div class="card shadow-sm position-relative">
+
+            <span class="badge-new">New</span>
+
+            <img src="{{ medicine.image.url }}">
+
+            <div class="card-body text-center">
+
+                <h5>{{ medicine.name }}</h5>
+
+                <p>{{ medicine.short_description }}</p>
+
+                <h6 class="text-success">Rs {{ medicine.price }}</h6>
+
+                <a href="{% url 'medicine_detail' medicine.slug %}" class="btn btn-primary w-100">
+                    View Details
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    {% endfor %}
+
+</div>
+
+{% endblock %}

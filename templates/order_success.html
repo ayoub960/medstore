@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="text-center">
+
+    <h2 class="text-success">🎉 Order Placed Successfully!</h2>
+
+    <p>We will contact you soon for delivery confirmation.</p>
+
+    <a href="{% url 'home' %}" class="btn btn-primary">
+        Back to Home
+    </a>
+
+</div>
+
+{% endblock %}

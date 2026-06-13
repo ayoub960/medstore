@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f5f7fb;
+}
+
+/* Navbar */
+.navbar {
+    padding: 12px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #2563eb, #1d4ed8);
+    color: white;
+    padding: 60px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* Product Image */
+.card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Buttons */
+.btn-primary {
+    background: #2563eb;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+}
+
+/* Badges */
+.badge-new {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.whatsapp-btn:hover {
+    background: #1ebe5d;
+}
+
+/* Forms */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
